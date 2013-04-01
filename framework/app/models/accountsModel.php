@@ -9,12 +9,12 @@
  * 
  *
  * 
- * @copyright     Copyright 2013, Iggow
- * @author		  Iggow Developers
+ * @copyright     Copyright 2013, Vagner Leitte
+ * @author	  Vagner Leitte
  * @created 	  17-01-2013
- * @link          http://www.iggow.com
- * @version       Sistema v 0.1
- * @package		  root/app/models
+ * @link          http://www.vagnerleitte.com.br
+ * @version       v 0.1
+ * @package	  root/app/models
  */
 
 class AccountsModel extends Model {
