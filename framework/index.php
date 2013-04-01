@@ -9,11 +9,11 @@
  *
  * 
  * @copyright     Copyright 2013, Iggow
- * @author		  Vagner Leite (vagnerleitte@outlook.com)
+ * @author	  Vagner Leite (vagnerleitte@outlook.com)
  * @created 	  03-12-2012
- * @link          http://www.iggow.com
- * @version       Sistema v 0.1
- * @package		  root
+ * @link          http://www.vagnerleitte.com.br
+ * @version       v 0.1
+ * @package	  root
  */
 
  	/**
@@ -21,9 +21,10 @@
 	 */
 	define('DIR_ROOT', __DIR__);
 	 
-	define ('PATH_ROOT','/iggow/');
- 
+	
 	define('DS', DIRECTORY_SEPARATOR);
+	
+	define ('PATH_ROOT', DS);
 
 	/**
 	 * Define o ambiente de execução do site. 
