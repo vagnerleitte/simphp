@@ -1,22 +1,26 @@
 <?php
 
 /**
- * 
- * 
+ *
+ *
  * PHP 5
  *
  * Sistema : Miniframework PHP OO para aplicações web.
- * 
  *
- * 
- * @copyright     Copyright 2013, Iggow
+ *
+ *
+ * @copyright     Copyright 2013-2014, Vagner Leite http://vagnerleitte.github.io/simphp/
  * @author		  Vagner Leite (vagnerleitte@outlook.com)
- * @created 	  17-01-2013
- * @link          http://www.iggow.com
+ * @created 	  03-12-2012
+ * @link          http://vagnerleitte.github.io/simphp/
  * @version       Sistema v 0.1
  * @package		  root/system/helpers
  */
-	class UploadHelper{
+
+ /**
+  * Gerencia o Upload de arquivos do site
+  */
+ class UploadHelper{
 		
 		protected $filePath,$path, $file, $fileName, $fileTmpName;
 		

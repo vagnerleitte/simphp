@@ -1,24 +1,32 @@
 <?php
 
 /**
- * 
- * 
+ *
+ *
  * PHP 5
  *
  * Sistema : Miniframework PHP OO para aplicações web.
- * 
  *
- * 
- * @copyright     Copyright 2013, Iggow
+ *
+ *
+ * @copyright     Copyright 2013-2014, Vagner Leite http://vagnerleitte.github.io/simphp/
  * @author		  Vagner Leite (vagnerleitte@outlook.com)
- * @created 	  17-01-2013
- * @link          http://www.iggow.com
+ * @created 	  03-12-2012
+ * @link          http://vagnerleitte.github.io/simphp/
  * @version       Sistema v 0.1
  * @package		  root/system/helpers
  */
+
  
+ /**
+  * Gerencia o envio de emails utilizando a biblioteca PHPMAILER
+  **/
+ 
+ 
+ // Importa a classe PHPMAILER
  include_once('lib/phpmailler/class.phpmailer.php');
- 
+
+
 	class EmailHelper extends Controller {
 	
 	
@@ -50,7 +58,7 @@
 			$this->Smtp->Username = $this->SmtpUser;
 			$this->Smtp->Password = $this->SmtpPass;
 			$this->Smtp->From	  = $this->From;
-			$this->Smtp->FromName = 'Administrador - SIC';
+			$this->Smtp->FromName = 'SIMPHP - Framework';
 			$this->Smtp->WordWrap = 50;
 			$this->Smtp->IsHTML(true);
 			$this->Smtp->CharSet  = 'UTF-8';
@@ -87,9 +95,6 @@
 		public function Send()
 		{
 			
-			define('SITE_TITULO', $this->Info[0]['SiteTitulo']);
-			define('NOME_CIDADE', $this->Info[0]['Cidade']);
-			define('EMAIL_CONTENT', $this->Mensagem);
 			ob_start();
 			include 'app/views/EmailTemplate.php';
 			$Mensagem = ob_get_contents();

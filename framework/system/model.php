@@ -9,13 +9,14 @@
  *
  *
  *
- * @copyright     Copyright 2013-2014, Vagner Leite http://vagnerleitte.com.br
- * @author	  Vagner Leite (vagnerleitte@outlook.com)
+ * @copyright     Copyright 2013-2014, Vagner Leite http://vagnerleitte.github.io/simphp/
+ * @author		  Vagner Leite (vagnerleitte@outlook.com)
  * @created 	  03-12-2012
- * @link          http://www.vagnerleitte.com.br
- * @version       v 0.1
- * @package       root/system
+ * @link          http://vagnerleitte.github.io/simphp/
+ * @version       Sistema v 0.1
+ * @package		  root/system/helpers
  */
+
 
 /**
  * Classe que abstrai a conexao e comunicação com o banco de dados utilizando
