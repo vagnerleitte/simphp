@@ -37,17 +37,19 @@
 Para usar o SIMPHP basta copiar todo o conteúdo do framework para o diretório do servidor onde a sua aplicação irá rodar e começar a desenvolver.
 Existe um parâmetro no arquivo index.php que deve ser configurado antes de começar a executar sua aplicação no servidor. A constante PATH_ROOT deve receber o caminho do diretório onde a sua aplicação está alocada dentro do servidor. Se você utiliza o apache e sua aplicação está dentro de um diretório chamado “meu_site” no diretório raiz do seu servidor a constante PATH_ROOT deve ser configurada como <code>define(‘PATH_ROOT’, ‘meu_site’)</code>.</p>
 
-<p><img src="http://sdrv.ms/13HdmlU" alt="Index - Configurações "></p>
+<p><img src="http://farm8.staticflickr.com/7285/8724945960_17072fc50a.jpg" alt="Index - Configurações "></p>
 
 <p>Se você estiver usando o IIS, deverá levar em consideração dois cenários:
 • Você criou um novo site no Gerenciador do IIS.
- <img src="http://sdrv.ms/13He4Qg" alt="IIS - Novo site">
-Neste caso o seu site será executado no diretório raiz do seu site virtual, logo a constante PATH_ROOT deverá ser definida com nenhum valor. 
-Ex.: define('PATH_ROOT', DS . 'appname' . DS);
-Obs.: definir o valor de PATH_ROOT com NULL não é recomendado.</p>
+ <img src="http://farm8.staticflickr.com/7287/8724945982_d1447f0fae.jpg" alt="IIS - Novo site">
+Neste caso o seu site será executado no diretório raiz do seu site virtual, logo a constante PATH_ROOT deverá ser definida com nenhum valor. </p>
+
+<p>Ex.: <code>define('PATH_ROOT', DS . 'appname' . DS);</code></p>
+
+<p>Obs.: definir o valor de PATH_ROOT com NULL não é recomendado.</p>
 
 <p>• Você criou um novo aplicativo dentro de um site virtual existente no gerenciador do IIS.
- <img src="http://sdrv.ms/13HeeqK" alt="IIS - Novo Aplicativo"></p>
+ <img src="http://farm8.staticflickr.com/7365/8723827295_10b3eea3a6.jpg" alt="IIS - Novo Aplicativo"></p>
 
 <p>Neste caso a constante PATH_ROOT deve ser configurada com o mesmo valor definido no campo alias ao criar o aplicativo.
 <img src="http://farm8.staticflickr.com/7456/8723773277_50ba764d50_b.jpg" alt="IIS - Alias de Aplicativo"><code>define('PATH_ROOT', DS . 'meu_site' . DS);</code></p>
@@ -69,23 +71,25 @@ public-&gt;templates&gt;nome_template-&gt;img. Você pode criar quantos template
 <p>Todos os arquivos deverão ser nomeados com a primeira letra do nome do arquivo em maiúscula. Caso o nome seja composto, a letra inicial de cada palavra no nome do arquivo também deverá estar em maiúscula.
 Ficam excluídos dessa regra os seguintes tipos de arquivo:</p>
 
-<p>*CSS
-*Imagens
-*JavaScripts
-*Bibliotecas de terceiros.
-*Áudio
-*Vídeo.</p>
+<ul>
+<li>CSS</li>
+<li>Imagens</li>
+<li>JavaScripts</li>
+<li>Bibliotecas de terceiros.</li>
+<li>Áudio</li>
+<li>
+<p>Vídeo.</p>
 
 <p>Ex.:
 Controller -&gt;   IndexController.php
 Model      -&gt;   IndexModel.php
 View       -&gt;   Index.phtml</p>
-
-<p>Os arquivos de views devem obrigatoriamente ter a extensão .phtml para serem reconhecidos pelo SIMPHP.</p>
+</li>
+</ul><p>Os arquivos de views devem obrigatoriamente ter a extensão .phtml para serem reconhecidos pelo SIMPHP.</p>
 
 <h2>Estrutura Completa de arquivos e diretórios</h2>
 
-<p><img src="http://sdrv.ms/13HcTjC" alt="Estrutura de Arquivos e Diretórios"></p>
+<p><img src="http://farm8.staticflickr.com/7323/8725036496_5bedb1f8cf.jpg" alt="Estrutura de Arquivos e Diretórios"></p>
 
 <h2>Tipos de arquivos</h2>
 
