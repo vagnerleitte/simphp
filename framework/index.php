@@ -25,7 +25,7 @@ define('DIR_ROOT', getcwd());
 /**
  * Define a string de deparação de diretório do servidor da aplicação
  */
-define('DS', '/');
+define('DS', DIRECTORY_SEPARATOR);
 
 /**
  * Define o nome do diretório raiz da aplicação
